@@ -321,6 +321,7 @@ font-family:"SFProDisplay-Semibold", sans-serif;
   font-size: 16px;
   line-height: 24px;
   padding: 13px;
+  cursor: pointer;
 }
 .button-outline{
   background: #ffffff;
@@ -329,6 +330,7 @@ font-family:"SFProDisplay-Semibold", sans-serif;
   color: #ffc53d;
   padding-left: 16px;
   padding-right: 16px;
+  cursor: pointer;
 }
 .button-outline .icon{
   width: 14px;
@@ -434,7 +436,12 @@ font-family:"SFProDisplay-Semibold", sans-serif;
   min-height: 362px;
 }
 .add-button{
-
+width: 100%;
+max-width: 370px;
+margin-right: 2%;
+}
+.add-post .button-outline{
+  margin-right: 1%;
 }
 
 
@@ -511,8 +518,23 @@ font-family:"SFProDisplay-Semibold", sans-serif;
     width: 90%;
     margin: auto;
   }
-   
+    
 
+}
+
+@media (max-width: 676px){
+  .add-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .add-button{
+    width: 100%;
+    max-width: 100%;
+  }
+  .add-post .button-outline{
+    margin-right: 0;
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 576px){
@@ -532,5 +554,9 @@ font-family:"SFProDisplay-Semibold", sans-serif;
   .author-about {
     order: 2;
     text-align: left;
+  }
+ 
+  .add-button{
+    width: 100%;
   }
 }
